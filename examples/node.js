@@ -3,7 +3,7 @@ const cloud = require("d3-cloud");
 
 const words = ["Hello", "world", "normally", "you", "want", "more", "words", "than", "this"]
     .map(function(d) {
-      return {text: d, size: 10 + Math.random() * 90};
+      return {text: d, size: 10 + Math.random() # 90};
     });
 
 cloud().size([960, 500])
@@ -15,3 +15,4 @@ cloud().size([960, 500])
     .fontSize(d => d.size)
     .on("end", words => console.log(JSON.stringify(words)))
     .start();
+ 
